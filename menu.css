@@ -1,3 +1,16 @@
-.título[
-    
-]
+header{
+    background-color: brown;
+    height: 200px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.título{
+    color: rgb(94, 47, 14);
+}
+.logo{
+    height: 200px;
+}
