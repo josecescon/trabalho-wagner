@@ -5,9 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.css">
     <title>Menu</title>
+ <style>
+    :root{
+      --sidebar-width: 260px;
+      --sidebar-bg: #0b0b0b;
+      --accent: #1f6feb;
+      --text: #ffffff;
+      --muted: #bdbdbd;
+      --transition: 0.28s ease;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: var(--text);
+      background:#f4f5f7;
+      min-height:100vh;
+      display:flex;
+    }
+    .sidebar{
+      width:var(--sidebar-width);
+      background:linear-gradient(180deg, var(--sidebar-bg), #0a0a0a 120%);
+      color:var(--text);
+      height:100vh;
+      position:fixed;
+      left:0;
+      top:0;
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      box-shadow: 4px 0 18px rgba(0,0,0,0.45);
+      transition: transform var(--transition), width var(--transition);
+      z-index:30;
+    }
 
+    .sidebar .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo{
+      width:44px;
+      height:44px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#222,#111);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--accent);
+      font-size:18px;
+      flex:0 0 44px;
+    }
+    .brand h1{
+      font-size:16px;
+      letter-spacing:0.4px;
+    }
+    .brand p{font-size:12px;color:var(--muted)}
+
+    nav{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      margin-top:6px;
+    }
+    .nav-item{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      padding:10px 12px;
+      border-radius:10px;
+      color:var(--text);
+      text-decoration:none;
+      font-size:14px;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .nav-item:hover{
+      background: rgba(255,255,255,0.03);
+      transform: translateX(4px);
+    }
+    .nav-item .ico{
+      width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.03);
+      display:grid;place-items:center;font-size:14px;color:var(--muted);
+      flex:0 0 32px;
+    }
+
+    .divider{
+      height:1px;background:rgba(255,255,255,0.04);margin:8px 0;border-radius:2px;
+    }
+
+    .sidebar-footer{
+      margin-top:auto;
+      font-size:13px;
+      color:var(--muted);
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .toggle-btn{
+      position:fixed;
+      left:calc(var(--sidebar-width) + 18px);
+      top:18px;
+      background:var(--sidebar-bg);
+      color:var(--text);
+      border: none;
+      padding:9px 12px;
+      border-radius:10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      cursor:pointer;
+      transition: left var(--transition), transform var(--transition);
+      z-index:40;
+    }
+
+    .main{
+      margin-left:var(--sidebar-width);
+      padding:28px;
+      width:100%;
+      transition: margin-left var(--transition);
+    }
+    .sidebar.closed{
+      transform: translateX(-100%);
+    }
+    .toggle-btn.closed{
+      left:18px;
+    }
+    .main.closed{
+      margin-left:0;
+    }
+    @media (max-width:880px){
+      .sidebar{transform: translateX(-100%);}
+      .sidebar.open{transform: translateX(0);}
+      .toggle-btn{left:18px}
+      .main{margin-left:0}
+    }
+    .nav-item:focus{outline:2px solid rgba(31,111,235,0.18);outline-offset:4px}
+  </style>
 </head>
 <body>
+    
     <header>
         <img src="img/logo1.png" alt="logo1" class="logo">
         <h1 class="título">Menu Daffara's Burguer</h1>
