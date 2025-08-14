@@ -23,24 +23,24 @@ const relatorio =[
 const acompanhamntos=[
 
     { id: "acompanhamento1", nomea: "batata pequena snack"},
-    { id: "acompanhamento1", nomea: "batatas do chefe"},
-    { id: "acompanhamento1", nomea: "batatas com chedar"},
-    { id: "acompanhamento1", nomea: "batata grande"},
-    { id: "acompanhamento1", nomea: "batata média"},
-    { id: "acompanhamento1", nomea: "torta de maçã"},
-    { id: "acompanhamento1", nomea: "batata rústica"},
-    { id: "acompanhamento1", nomea:  "batata com bacon" },
+    { id: "acompanhamento2", nomea: "batatas do chefe"},
+    { id: "acompanhamento3", nomea: "batatas com chedar"},
+    { id: "acompanhamento4", nomea: "batata grande"},
+    { id: "acompanhamento5", nomea: "batata média"},
+    { id: "acompanhamento6", nomea: "torta de maçã"},
+    { id: "acompanhamento7", nomea: "batata rústica"},
+    { id: "acompanhamento8", nomea:  "batata com bacon" },
 
 ]
 const bebidas=[
 
-    { id: "acompanhamento2", nomeb: "coca cola"},
-    { id: "acompanhamento2", nomeb: "fanta laranja"},
-    { id: "acompanhamento2", nomeb: "fanta uva"},
-    { id: "acompanhamento2", nomeb: "sprite"},
-    { id: "acompanhamento2", nomeb: "chá gelado"},
-    { id: "acompanhamento2", nomeb: "suco de laranja"},
-    { id: "acompanhamento2", nomeb: "suco de beterraba"},
-    { id: "acompanhamento2", nomeb: "água com gás" },
+    { id: "acompanhamentob1", nomeb: "coca cola"},
+    { id: "acompanhamentob2", nomeb: "fanta laranja"},
+    { id: "acompanhamentob3", nomeb: "fanta uva"},
+    { id: "acompanhamentob4", nomeb: "sprite"},
+    { id: "acompanhamentob5", nomeb: "chá gelado"},
+    { id: "acompanhamentob6", nomeb: "suco de laranja"},
+    { id: "acompanhamentob7", nomeb: "suco de beterraba"},
+    { id: "acompanhamentob8", nomeb: "água com gás" },
 
 ]
