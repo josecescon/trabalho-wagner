@@ -1,0 +1,16 @@
+body{
+    margin: 0%;
+}
+.logo{
+    width: 150px;
+}
+header{
+    background-color: brown;
+}
+main{
+    text-align: center;
+}
+.informacoes{
+    display: flex;
+    text-align: center;
+}
