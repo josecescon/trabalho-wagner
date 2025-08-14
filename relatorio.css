@@ -5,12 +5,12 @@ body{
     width: 150px;
 }
 header{
-    background-color: brown;
+    background-color: brown
 }
 main{
     text-align: center;
 }
 .informacoes{
     display: flex;
-    text-align: center;
+    margin-left: 43%;
 }
