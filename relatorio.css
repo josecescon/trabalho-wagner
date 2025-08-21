@@ -1,11 +1,13 @@
 body{
     margin: 0%;
+    background-image: url(img/fundotop.png);
+    color: white;
 }
 .logo{
     width: 150px;
 }
 header{
-    background-color: brown
+    background-color: rgba(32, 18, 15, 255);
 }
 main{
     text-align: center;
@@ -13,4 +15,8 @@ main{
 .informacoes{
     display: flex;
     margin-left: 43%;
+}
+main{
+    height: 935px;
+    width: 1870px;
 }
