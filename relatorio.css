@@ -11,6 +11,7 @@ header{
 }
 main{
     text-align: center;
+     font-family: 'Troika';
 }
 .informacoes{
     display: flex;
@@ -19,4 +20,8 @@ main{
 main{
     height: 935px;
     width: 1870px;
+}
+@font-face {
+    font-family: 'Troika';
+    src: url(troika.otf);
 }
