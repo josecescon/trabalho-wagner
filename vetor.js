@@ -59,16 +59,54 @@ const locais=[
 ] 
 
 function criaOption(){
-    const locall = document.getElementById("rua");
+
+    const locall1 = document.getElementById("lanches1");
+    for (let i = 0; i < lanches.length; i++){
+        const item = lanches[i];
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+        locall1.appendChild(option);
+    }
+
+    const locall2 = document.getElementById("lanches2");
+    for (let i = 0; i < lanches.length; i++){
+        const item = lanches[i];
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+        locall2.appendChild(option);
+    }
+    
+    const locall3 = document.getElementById("lanches3");
+    for (let i = 0; i < lanches.length; i++){
+        const item = lanches[i];
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+        locall3.appendChild(option);
+    }
+
+    const locall4 = document.getElementById("acompanhamento");
+    for (let i = 0; i < acompanhamntos.length; i++){
+        const item = acompanhamntos[i];
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nomea;
+        locall4.appendChild(option);
+    }
+
+    const locall5 = document.getElementById("rua");
     for (let i = 0; i < locais.length; i++){
         const item = locais[i];
         const option = document.createElement("option");
         option.value = item.id;
         option.textContent = item.nome;
-        locall.appendChild(option);
+        locall5.appendChild(option);
     }
 }
 
-function A(){
-    alert(locais[i])
+function mandaOpcoes(){
+    const localEntrega = document.getElementById("rua")
+     
 };
