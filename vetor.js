@@ -22,25 +22,25 @@ const relatorio =[
 
 const acompanhamntos=[
 
-    { id: "acompanhamento1", nomea: "batata pequena snack"},
-    { id: "acompanhamento2", nomea: "batatas do chefe"},
-    { id: "acompanhamento3", nomea: "batatas com chedar"},
-    { id: "acompanhamento4", nomea: "batata grande"},
-    { id: "acompanhamento5", nomea: "batata média"},
-    { id: "acompanhamento6", nomea: "torta de maçã"},
-    { id: "acompanhamento7", nomea: "batata rústica"},
-    { id: "acompanhamento8", nomea:  "batata com bacon" },
+    { id: "acompanhamento1", nomea: "batata pequena snack", precco: "9,50"},
+    { id: "acompanhamento2", nomea: "batatas do chefe", precco: "11,50"},
+    { id: "acompanhamento3", nomea: "batatas com chedar", precco: "10,50"},
+    { id: "acompanhamento4", nomea: "batata grande", precco: "15,90"},
+    { id: "acompanhamento5", nomea: "batata média", precco: "13,60"},
+    { id: "acompanhamento6", nomea: "torta de maçã", precco: "8,50"},
+    { id: "acompanhamento7", nomea: "batata rústica", precco: "13,60"},
+    { id: "acompanhamento8", nomea:  "batata com bacon", precco: "20,09" },
 
 ]
 const bebidas=[
 
-    { id: "acompanhamentob1", nomeb: "coca cola"},
-    { id: "acompanhamentob2", nomeb: "fanta laranja"},
-    { id: "acompanhamentob3", nomeb: "fanta uva"},
-    { id: "acompanhamentob4", nomeb: "sprite"},
-    { id: "acompanhamentob5", nomeb: "chá gelado"},
-    { id: "acompanhamentob6", nomeb: "suco de laranja"},
-    { id: "acompanhamentob7", nomeb: "suco de beterraba"},
-    { id: "acompanhamentob8", nomeb: "água com gás" },
+    { id: "acompanhamentob1", nomeb: "coca cola", predo: "9,50"},
+    { id: "acompanhamentob2", nomeb: "fanta laranja", predo: "7,50"},
+    { id: "acompanhamentob3", nomeb: "fanta uva", predo: "8,50"},
+    { id: "acompanhamentob4", nomeb: "sprite", predo: "7,50"},
+    { id: "acompanhamentob5", nomeb: "chá gelado", predo: "9,30"},
+    { id: "acompanhamentob6", nomeb: "suco de laranja", predo: "7,50"},
+    { id: "acompanhamentob7", nomeb: "suco de beterraba", predo: "10,30"},
+    { id: "acompanhamentob8", nomeb: "água com gás", predo: "6,50"},
 
 ]
