@@ -48,7 +48,7 @@ const locais=[
     { id:"rua1",value: "morunbi" , nome: "Morumbi"},
     { id:"rua2",value: "ayrton_senna", nome: "Ayrton Senna"},
     { id:"rua3",value: "felipe_wandscheer" , nome: "Felipe Wandscheer"},
-    { id:"rua4",value: "paraná" , nome: "Av_Paraná"},
+    { id:"rua4",value: "paraná" , nome: "Av Paraná"},
     { id:"rua5",value: "brasil" , nome: "Av Brasil"},
     { id:"rua6",value: "urupes" , nome: "Rua Urupês"},
     { id:"rua7",value: "conj_libra" , nome: "Conj Libra"},
