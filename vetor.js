@@ -1,11 +1,11 @@
 const lanches =[
 
-    { id: "lanche1", nome: "daffara picante", preco: "32,50"},
-    { id: "lanche2", nome: "vegan daffara", preco: "35,00"},
-    { id: "lanche3", nome: "daffara clasic", preco: "20,00"},   
-    { id: "lanche4", nome: "daffarinha kids", preco: "28,90"},
-    { id: "lanche5", nome: "daffara duplo", preco: "40,00"},
-    { id: "lanche6", nome: "daffara wraps", preco: "32,00"},
+    { id: "lanche1", nome: "ricardinho picante", preco: 32.50},
+    { id: "lanche2", nome: "vegan ricardinho", preco: 35.00},
+    { id: "lanche3", nome: "ricardinho classic", preco: 20.00},   
+    { id: "lanche4", nome: "ricardinho kids", preco: 28.90},
+    { id: "lanche5", nome: "ricardinho duplo", preco: 40.00},
+    { id: "lanche6", nome: "ricardinho wraps", preco: 32.00},
 ]
 
 const relatorio =[
