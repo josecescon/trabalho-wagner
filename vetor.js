@@ -1,46 +1,45 @@
 const lanches =[
 
-    { id: "lanche1", nome: "ricardinho picante", preco: 32.50},
-    { id: "lanche2", nome: "vegan ricardinho", preco: 35.00},
-    { id: "lanche3", nome: "ricardinho classic", preco: 20.00},   
-    { id: "lanche4", nome: "ricardinho kids", preco: 28.90},
-    { id: "lanche5", nome: "ricardinho duplo", preco: 40.00},
-    { id: "lanche6", nome: "ricardinho wraps", preco: 32.00},
-    { id: "lanche6", nome: "cerqueira em chamas", preco: 42.00},
+    { id: "lanche1", nome: "Ricardinho Picante", preco: 32.50},
+    { id: "lanche2", nome: "Vegan Ricardinho", preco: 35.00},
+    { id: "lanche3", nome: "Ricardinho Classic", preco: 20.00},   
+    { id: "lanche4", nome: "Ricardinho Kids", preco: 28.90},
+    { id: "lanche5", nome: "Ricardinho Duplo", preco: 40.00},
+    { id: "lanche6", nome: "Ricardinho Wraps", preco: 32.00},
 ]
 
 const relatorio =[
 
-    { id: "relatorio1", entregador: "jose", local :"jorge schimmelpfeng"},
-    { id: "relatorio2", entregador: "alex", local :"morumbi"},
-    { id: "relatorio3", entregador: "hytalo", local :"ayrton senna"},
-    { id: "relatorio4", entregador: "felipe", local :"felipe wandscheer"},
-    { id: "relatorio5", entregador: "alexandre", local :"av. parana"},
-    { id: "relatorio6", entregador: "jair", local :"av. brasil"},
-    { id: "relatorio7", entregador: "luiz", local :"rua urupes"},
-    { id: "relatorio8", entregador:  "dilma" , local :"conj. Libra"},
+    { id: "relatorio1", entregador: "Jose", local :"Jorge schimmelpfeng"},
+    { id: "relatorio2", entregador: "Alex", local :"Morumbi"},
+    { id: "relatorio3", entregador: "Hytalo", local :"Ayrton senna"},
+    { id: "relatorio4", entregador: "Felipe", local :"Felipe wandscheer"},
+    { id: "relatorio5", entregador: "Alexandre", local :"Av. Paraná"},
+    { id: "relatorio6", entregador: "Jair", local :"Av. Brasil"},
+    { id: "relatorio7", entregador: "Luiz", local :"Rua Urupes"},
+    { id: "relatorio8", entregador: "Dilma" , local :"Conj. Libra"},
 ]
 
 const acompanhamntos=[
-    { id: "acompanhamento1", nomea: "batata pequena snack", precco:5.00},
-    { id: "acompanhamento2", nomea: "batatas do chefe", precco:7.00},
-    { id: "acompanhamento3", nomea: "batatas com chedar", precco:10.00},
-    { id: "acompanhamento4", nomea: "batata grande", precco:9.00},
-    { id: "acompanhamento5", nomea: "batata média", precco:7.50},
-    { id: "acompanhamento6", nomea: "torta de maçã", precco:10.00},
-    { id: "acompanhamento7", nomea: "JP batatas rústicas", precco:8.00},
-    { id: "acompanhamento8", nomea: "batata com bacon", precco:12.00},
-    { id: "acompanhamento8", nomea: "batatas do ricardo", precco:12.00},
+    { id: "acompanhamento1", nomea: "Batata Pequena snack", precco:5.00},
+    { id: "acompanhamento2", nomea: "Batata do Chefe", precco:7.00},
+    { id: "acompanhamento3", nomea: "Batata com Chedar", precco:10.00},
+    { id: "acompanhamento4", nomea: "Batata Grande", precco:9.00},
+    { id: "acompanhamento5", nomea: "Batata Média", precco:7.50},
+    { id: "acompanhamento6", nomea: "Torta de Maçã", precco:10.00},
+    { id: "acompanhamento7", nomea: "Batata Rústica", precco:8.00},
+    { id: "acompanhamento8", nomea: "Batata com Bacon", precco:12.00},
+
     ]
  const bebidas=[
-    { id: "acompanhamentob1", nome: "coca cola", predo: 6.00},
-    { id: "acompanhamentob2", nome: "fanta laranja", predo: 6.00},
-    { id: "acompanhamentob3", nome: "fanta uva", predo: 6.00},
-    { id: "acompanhamentob4", nome: "sprite", predo: 6.00},
-    { id: "acompanhamentob5", nome: "chá gelado", predo: 7.00},
-    { id: "acompanhamentob6", nome: "suco de laranja", predo: 5.00},
-    { id: "acompanhamentob7", nome: "suco de beterraba", predo: 5.00},
-    { id: "acompanhamentob8", nome: "água com gás", predo: 4.50 },
+    { id: "acompanhamentob1", nome: "Coca Cola", predo: 6.00},
+    { id: "acompanhamentob2", nome: "Fanta Laranja", predo: 6.00},
+    { id: "acompanhamentob3", nome: "Fanta Uva", predo: 6.00},
+    { id: "acompanhamentob4", nome: "Sprite", predo: 6.00},
+    { id: "acompanhamentob5", nome: "Chá Gelado", predo: 7.00},
+    { id: "acompanhamentob6", nome: "Suco de Laranja", predo: 5.00},
+    { id: "acompanhamentob7", nome: "Suco de Beterraba", predo: 5.00},
+    { id: "acompanhamentob8", nome: "Água com Gás", predo: 4.50 },
 ]
 
 const locais=[
@@ -54,7 +53,7 @@ const locais=[
     { id:"rua6",value: "urupes" , nome: "Rua Urupês"},
     { id:"rua7",value: "conj_libra" , nome: "Conj Libra"},
 
-] 
+]
 
 function criaOption(){
 
@@ -103,7 +102,7 @@ function criaOption(){
         locall5.appendChild(option);
     }
 
-    const bebidas2 = document.getElementById("bebidas");
+    const bebidas2 = document.getElementById("bebida");
     for (let i = 0; i < bebidas.length; i++){
         const item = bebidas[i];
         const option = document.createElement("option");
@@ -114,11 +113,27 @@ function criaOption(){
 }
 
 function mandaOpcoes(){
-    var nomePessoa = document.getElementById("Nome")
-    var lancheUm = document.getElementById("lanche1")
-    var lancheDois = document.getElementById("lanche2")
-    var lancheTres = document.getElementById("lanche3")
-    var aconpanhamentoz = document.getElementById("aconpanhamnto")
-    var Bebidaz = document.getElementById("bebidas")
-    var localEntrega = document.getElementById("rua")
+    const localEntrega = document.getElementById("rua")
+
 };
+
+function procurarPorId(lista, idProcurado){
+    for (let i = 0; i < lista.length; i++){
+        if (lista[i] === idProcurado){
+            return lista[i];
+        }
+    }
+    return null;
+}
+preencherOpcoes();
+
+function gerarRelatorio(){
+    const nome = document.getElementById("nome").value;
+    const quantidade = (document.getElementById("quantidade ").value);
+    const lancheId = document.getElementById("acompanhamentos").value;
+    const acompanhamentoId = document.getElementById("bebidas").value;
+    const localId = document.getElementById("locais").value;
+
+    
+    
+}
