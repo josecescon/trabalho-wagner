@@ -1,11 +1,12 @@
 const lanches =[
 
-    { id: "lanche1", nome: "daffara picante", preco: "32,50"},
-    { id: "lanche2", nome: "vegan daffara", preco: "35,00"},
-    { id: "lanche3", nome: "daffara clasic", preco: "20,00"},   
-    { id: "lanche4", nome: "daffarinha kids", preco: "28,90"},
-    { id: "lanche5", nome: "daffara duplo", preco: "40,00"},
-    { id: "lanche6", nome: "daffara wraps", preco: "32,00"},
+    { id: "lanche1", nome: "ricardinho picante", preco: 32.50},
+    { id: "lanche2", nome: "vegan ricardinho", preco: 35.00},
+    { id: "lanche3", nome: "ricardinho classic", preco: 20.00},   
+    { id: "lanche4", nome: "ricardinho kids", preco: 28.90},
+    { id: "lanche5", nome: "ricardinho duplo", preco: 40.00},
+    { id: "lanche6", nome: "ricardinho wraps", preco: 32.00},
+    { id: "lanche6", nome: "cerqueira em chamas", preco: 42.00},
 ]
 
 const relatorio =[
@@ -27,19 +28,19 @@ const acompanhamntos=[
     { id: "acompanhamento4", nomea: "batata grande", precco:9.00},
     { id: "acompanhamento5", nomea: "batata média", precco:7.50},
     { id: "acompanhamento6", nomea: "torta de maçã", precco:10.00},
-    { id: "acompanhamento7", nomea: "batata rústica", precco:8.00},
+    { id: "acompanhamento7", nomea: "JP batatas rústicas", precco:8.00},
     { id: "acompanhamento8", nomea: "batata com bacon", precco:12.00},
-
+    { id: "acompanhamento8", nomea: "batatas do ricardo", precco:12.00},
     ]
  const bebidas=[
-    { id: "acompanhamentob1", nome: "Coca Cola", predo: 6.00},
-    { id: "acompanhamentob2", nome: "Fanta Laranja", predo: 6.00},
-    { id: "acompanhamentob3", nome: "Fanta Uva", predo: 6.00},
-    { id: "acompanhamentob4", nome: "Sprite", predo: 6.00},
-    { id: "acompanhamentob5", nome: "Chá Gelado", predo: 7.00},
-    { id: "acompanhamentob6", nome: "Suco de Laranja", predo: 5.00},
-    { id: "acompanhamentob7", nome: "Suco de Beterraba", predo: 5.00},
-    { id: "acompanhamentob8", nome: "Agua com Gás", predo: 4.50 },
+    { id: "acompanhamentob1", nome: "coca cola", predo: 6.00},
+    { id: "acompanhamentob2", nome: "fanta laranja", predo: 6.00},
+    { id: "acompanhamentob3", nome: "fanta uva", predo: 6.00},
+    { id: "acompanhamentob4", nome: "sprite", predo: 6.00},
+    { id: "acompanhamentob5", nome: "chá gelado", predo: 7.00},
+    { id: "acompanhamentob6", nome: "suco de laranja", predo: 5.00},
+    { id: "acompanhamentob7", nome: "suco de beterraba", predo: 5.00},
+    { id: "acompanhamentob8", nome: "água com gás", predo: 4.50 },
 ]
 
 const locais=[
