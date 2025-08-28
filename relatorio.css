@@ -11,7 +11,7 @@ header{
 }
 main{
     text-align: center;
-     font-family: 'Troika';
+    font-family: 'Adonais';
 }
 .informacoes{
     display: flex;
@@ -22,6 +22,11 @@ main{
     width: 1870px;
 }
 @font-face {
-    font-family: 'Troika';
-    src: url(troika.otf);
+         font-family: 'Adonais';
+         src: url(img/adonais/Adonais.ttf);
+         font-weight: normal;
+         font-style: normal;
+}
+body{
+         font-family: 'Adonais'
 }
