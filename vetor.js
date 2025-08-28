@@ -25,21 +25,21 @@ const acompanhamntos=[
     { id: "acompanhamento2", nomea: "batatas do chefe", precco:7.00},
     { id: "acompanhamento3", nomea: "batatas com chedar", precco:10.00},
     { id: "acompanhamento4", nomea: "batata grande", precco:9.00},
-     { id: "acompanhamento5", nomea: "batata média", precco:7.50},
-      { id: "acompanhamento6", nomea: "torta de maçã", precco:10.00},
-       { id: "acompanhamento7", nomea: "batata rústica", precco:8.00},
-        { id: "acompanhamento8", nomea: "batata com bacon", precco:12.00},
+    { id: "acompanhamento5", nomea: "batata média", precco:7.50},
+    { id: "acompanhamento6", nomea: "torta de maçã", precco:10.00},
+    { id: "acompanhamento7", nomea: "batata rústica", precco:8.00},
+    { id: "acompanhamento8", nomea: "batata com bacon", precco:12.00},
 
     ]
  const bebidas=[
-        { id: "acompanhamentob1", nomeb: "coca cola", predo: 6.00},
-    { id: "acompanhamentob2", nomeb: "fanta laranja", predo: 6.00},
-    { id: "acompanhamentob3", nomeb: "fanta uva", predo: 6.00},
-    { id: "acompanhamentob4", nomeb: "sprite", predo: 6.00},
-    { id: "acompanhamentob5", nomeb: "chá gelado", predo: 7.00},
-    { id: "acompanhamentob6", nomeb: "suco de laranja", predo: 5.00},
-    { id: "acompanhamentob7", nomeb: "suco de beterraba", predo: 5.00},
-    { id: "acompanhamentob8", nomeb: "água com gás", predo: 4.50 },
+    { id: "acompanhamentob1", nome: "coca cola", predo: 6.00},
+    { id: "acompanhamentob2", nome: "fanta laranja", predo: 6.00},
+    { id: "acompanhamentob3", nome: "fanta uva", predo: 6.00},
+    { id: "acompanhamentob4", nome: "sprite", predo: 6.00},
+    { id: "acompanhamentob5", nome: "chá gelado", predo: 7.00},
+    { id: "acompanhamentob6", nome: "suco de laranja", predo: 5.00},
+    { id: "acompanhamentob7", nome: "suco de beterraba", predo: 5.00},
+    { id: "acompanhamentob8", nome: "água com gás", predo: 4.50 },
 ]
 
 const locais=[
@@ -101,9 +101,18 @@ function criaOption(){
         option.textContent = item.nome;
         locall5.appendChild(option);
     }
+
+    const bebidas2 = document.getElementById("bebida");
+    for (let i = 0; i < bebidas.length; i++){
+        const item = bebidas[i];
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.nome;
+        bebidas2.appendChild(option);
+    }
 }
 
 function mandaOpcoes(){
     const localEntrega = document.getElementById("rua")
-     
+
 };
