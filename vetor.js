@@ -1,171 +1,129 @@
-const lanches =[
+const lanches = [
+    { id: "lanche1", nome: "Ricardinho Picante", preco: 32.50 },
+    { id: "lanche2", nome: "Vegan Ricardinho", preco: 35.00 },
+    { id: "lanche3", nome: "Ricardinho Classic", preco: 20.00 },
+    { id: "lanche4", nome: "Ricardinho Kids", preco: 28.90 },
+    { id: "lanche5", nome: "Ricardinho Duplo", preco: 40.00 },
+    { id: "lanche6", nome: "Ricardinho Wraps", preco: 32.00 },
+    { id: "lanche7", nome: "Cerqueira em chamas", preco: 42.00 }
+];
 
-    { id: "lanche1", nome: "Ricardinho Picante", preco: 32.50},
-    { id: "lanche2", nome: "Vegan Ricardinho", preco: 35.00},
-    { id: "lanche3", nome: "Ricardinho Classic", preco: 20.00},   
-    { id: "lanche4", nome: "Ricardinho Kids", preco: 28.90},
-    { id: "lanche5", nome: "Ricardinho Duplo", preco: 40.00},
-    { id: "lanche6", nome: "Ricardinho Wraps", preco: 32.00},
-    { id: "lanche7", nome: "Cerqueira em chamas", preco: 42.00},
-]
+const relatorio = [
+    { id: "relatorio1", entregador: "Jose", local: "Jorge Schimmelpfeng" },
+    { id: "relatorio2", entregador: "Alex", local: "Morumbi" },
+    { id: "relatorio3", entregador: "Hytalo", local: "Ayrton Senna" },
+    { id: "relatorio4", entregador: "Felipe", local: "Felipe Wandscheer" },
+    { id: "relatorio5", entregador: "Alexandre", local: "Av. Paraná" },
+    { id: "relatorio6", entregador: "Jair", local: "Av. Brasil" },
+    { id: "relatorio7", entregador: "Luiz", local: "Rua Urupês" },
+    { id: "relatorio8", entregador: "Dilma", local: "Conj. Libra" }
+];
 
-const relatorio =[
+const acompanhamentos = [
+    { id: "acomp1", nome: "Batata Pequena snack", preco: 5.00 },
+    { id: "acomp2", nome: "Batata do Chefe", preco: 7.00 },
+    { id: "acomp3", nome: "Batata com Cheddar", preco: 10.00 },
+    { id: "acomp4", nome: "Batata Grande", preco: 9.00 },
+    { id: "acomp5", nome: "Batata Média", preco: 7.50 },
+    { id: "acomp6", nome: "Torta de Maçã", preco: 10.00 },
+    { id: "acomp7", nome: "Batata com Atum", preco: 8.00 },
+    { id: "acomp8", nome: "Batata com Bacon", preco: 12.00 },
+    { id: "acomp9", nome: "JP Batatas Rústicas", preco: 14.00 }
+];
 
-    { id: "relatorio1", entregador: "Jose", local :"Jorge schimmelpfeng"},
-    { id: "relatorio2", entregador: "Alex", local :"Morumbi"},
-    { id: "relatorio3", entregador: "Hytalo", local :"Ayrton senna"},
-    { id: "relatorio4", entregador: "Felipe", local :"Felipe wandscheer"},
-    { id: "relatorio5", entregador: "Alexandre", local :"Av. Paraná"},
-    { id: "relatorio6", entregador: "Jair", local :"Av. Brasil"},
-    { id: "relatorio7", entregador: "Luiz", local :"Rua Urupes"},
-    { id: "relatorio8", entregador: "Dilma" , local :"Conj. Libra"},
-]
+const bebidas = [
+    { id: "beb1", nome: "Coca Cola", preco: 6.00 },
+    { id: "beb2", nome: "Fanta Laranja", preco: 6.00 },
+    { id: "beb3", nome: "Fanta Uva", preco: 6.00 },
+    { id: "beb4", nome: "Sprite", preco: 6.00 },
+    { id: "beb5", nome: "Chá Gelado", preco: 7.00 },
+    { id: "beb6", nome: "Suco de Laranja", preco: 5.00 },
+    { id: "beb7", nome: "Suco de Beterraba", preco: 5.00 },
+    { id: "beb8", nome: "Água com Gás", preco: 4.50 }
+];
 
-const acompanhamntos=[
-    { id: "acompanhamento1", nomea: "Batata Pequena snack", precco:5.00},
-    { id: "acompanhamento2", nomea: "Batata do Chefe", precco:7.00},
-    { id: "acompanhamento3", nomea: "Batata com Chedar", precco:10.00},
-    { id: "acompanhamento4", nomea: "Batata Grande", precco:9.00},
-    { id: "acompanhamento5", nomea: "Batata Média", precco:7.50},
-    { id: "acompanhamento6", nomea: "Torta de Maçã", precco:10.00},
-    { id: "acompanhamento7", nomea: "Batata com Atum", precco:8.00},
-    { id: "acompanhamento8", nomea: "Batata com Bacon", precco:12.00},
-    { id: "acompanhamento8", nomea: "Jp batatas Rústicas", precco:14.00},
+const locais = [
+    { id: "rua0", nome: "Jorge Schimmelpfeng" },
+    { id: "rua1", nome: "Morumbi" },
+    { id: "rua2", nome: "Ayrton Senna" },
+    { id: "rua3", nome: "Felipe Wandscheer" },
+    { id: "rua4", nome: "Av Paraná" },
+    { id: "rua5", nome: "Av Brasil" },
+    { id: "rua6", nome: "Rua Urupês" },
+    { id: "rua7", nome: "Conj Libra" }
+];
 
-    ]
- const bebidas=[
-    { id: "acompanhamentob1", nome: "Coca Cola", predo: 6.00},
-    { id: "acompanhamentob2", nome: "Fanta Laranja", predo: 6.00},
-    { id: "acompanhamentob3", nome: "Fanta Uva", predo: 6.00},
-    { id: "acompanhamentob4", nome: "Sprite", predo: 6.00},
-    { id: "acompanhamentob5", nome: "Chá Gelado", predo: 7.00},
-    { id: "acompanhamentob6", nome: "Suco de Laranja", predo: 5.00},
-    { id: "acompanhamentob7", nome: "Suco de Beterraba", predo: 5.00},
-    { id: "acompanhamentob8", nome: "Água com Gás", predo: 4.50 },
-]
 
-const locais=[
+function criaOption() {
+    ["lanches1", "lanches2", "lanches3"].forEach(id => {
+        const select = document.getElementById(id);
+        lanches.forEach(item => {
+            const option = document.createElement("option");
+            option.value = item.id;
+            option.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+            select.appendChild(option);
+        });
+    });
 
-    { id:"rua0",value: "jorge_shimelpfeng" , nome: "Jorge Schimmelpfeng"},
-    { id:"rua1",value: "morunbi" , nome: "Morumbi"},
-    { id:"rua2",value: "ayrton_senna", nome: "Ayrton Senna"},
-    { id:"rua3",value: "felipe_wandscheer" , nome: "Felipe Wandscheer"},
-    { id:"rua4",value: "paraná" , nome: "Av Paraná"},
-    { id:"rua5",value: "brasil" , nome: "Av Brasil"},
-    { id:"rua6",value: "urupes" , nome: "Rua Urupês"},
-    { id:"rua7",value: "conj_libra" , nome: "Conj Libra"},
+    const acomp = document.getElementById("acompanhamentos");
+    acompanhamentos.forEach(item => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+        acomp.appendChild(option);
+    });
 
-]
+    const bebida = document.getElementById("bebidas");
+    bebidas.forEach(item => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+        bebida.appendChild(option);
+    });
 
-function criaOption(){
-
-    const locall1 = document.getElementById("lanches1");
-    for (let i = 0; i < lanches.length; i++){
-        const item = lanches[i];
+    const rua = document.getElementById("rua");
+    locais.forEach(item => {
         const option = document.createElement("option");
         option.value = item.id;
         option.textContent = item.nome;
-        locall1.appendChild(option);
-    }
-
-    const locall2 = document.getElementById("lanches2");
-    for (let i = 0; i < lanches.length; i++){
-        const item = lanches[i];
-        const option = document.createElement("option");
-        option.value = item.id;
-        option.textContent = item.nome;
-        locall2.appendChild(option);
-    }
-    
-    const locall3 = document.getElementById("lanches3");
-    for (let i = 0; i < lanches.length; i++){
-        const item = lanches[i];
-        const option = document.createElement("option");
-        option.value = item.id;
-        option.textContent = item.nome;
-        locall3.appendChild(option);
-    }
-
-    const locall4 = document.getElementById("acompanhamento");
-    for (let i = 0; i < acompanhamntos.length; i++){
-        const item = acompanhamntos[i];
-        const option = document.createElement("option");
-        option.value = item.id;
-        option.textContent = item.nomea;
-        locall4.appendChild(option);
-    }
-
-    const locall5 = document.getElementById("rua");
-    for (let i = 0; i < locais.length; i++){
-        const item = locais[i];
-        const option = document.createElement("option");
-        option.value = item.id;
-        option.textContent = item.nome;
-        locall5.appendChild(option);
-    }
-
-    const bebidas2 = document.getElementById("bebidas");
-    for (let i = 0; i < bebidas.length; i++){
-        const item = bebidas[i];
-        const option = document.createElement("option");
-        option.value = item.id;
-        option.textContent = item.nome;
-        bebidas2.appendChild(option);
-    }
+        rua.appendChild(option);
+    });
 }
 
-function mandaOpcoes(){
-    const localEntrega = document.getElementById("rua")
+function mandaOpcoes() {
+    const pedido = {
+        nome: document.getElementById("Nome").value,
+        lanche1: document.getElementById("lanches1").value,
+        lanche2: document.getElementById("lanches2").value,
+        lanche3: document.getElementById("lanches3").value,
+        acompanhamento: document.getElementById("acompanhamentos").value,
+        bebida: document.getElementById("bebidas").value,
+        rua: document.getElementById("rua").value
+    };
 
-};
-
-function procurarPorId(lista, idProcurado){
-    for (let i = 0; i < lista.length; i++){
-        if (lista[i] === idProcurado){
-            return lista[i];
-        }
-    }
-    return null;
+    localStorage.setItem("pedido", JSON.stringify(pedido));
 }
-preencherOpcoes();
 
-function gerarRelatorio(){
-    const nome = document.getElementById("nome").value;
-    const quantidade = (document.getElementById("quantidade ").value);
-    const lancheId = document.getElementById("lanches").value;
-    const acompanhamentoId = document.getElementById("acompanhamentos").value;
-    const bebidaId = document.getElementById("bebidas").value;
-    const localId = document.getElementById("locais").value;
-
-    var lanche = procurarPorId(lanches, lancheId);
-    var acompanhamento = procurarPorId(acompanhamentos, acompanhamentoId);
-    var bebida = procurarPorId(bebidas, bebidaId);
-    var local = procurarPorId(locais, localId);
-
-    let total = (lanche.preco * quantidade) + acompanhamento.precco + bebida.predo + local.preco;
+function procurarPorId(lista, idProcurado) {
+    return lista.find(item => item.id === idProcurado) || null;
 }
+
 function gerarRelatorio() {
-    const relatorioHTML = `
+    const pedido = JSON.parse(localStorage.getItem("pedido"));
+    if (!pedido) return;
 
-    <h2> Relatório do pedido</h2>
-    <p><strong>Nome do cliente: </strong> ${nome} </p>
-    <p><strong>Nome do Entregador: </strong> ${nome2}</p>
-    <p><strong>Local de Entrega: </strong> ${local}</p>
-    <p><strong>Lanche: </strong> ${lanche1}</p>
-    <p><strong>Lanche: </strong> ${lanche2}</p>
-    <p><strong>Lanche: </strong> ${lanche3}</p>
-    <p><strong>Acompanhamento: </strong> ${acompanhamento}</p>
-    <p><strong>Bebida: </strong> ${bebida}</p>
-    <p><strong>Rua do cliente: </strong> ${rua}</p>
-    
-    `; 
+    const lanche = procurarPorId(lanches, pedido.lanche1);
+    const acomp = procurarPorId(acompanhamentos, pedido.acompanhamento);
+    const bebida = procurarPorId(bebidas, pedido.bebida);
+    const local = procurarPorId(locais, pedido.rua);
 
-    documento.getElementById("relatorio").innerHTML = relatorioHTML;
-}
+    const entregador = relatorio[Math.floor(Math.random() * relatorio.length)];
+
+    const total = (lanche ? lanche.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
 
 
-function esconde() {
-    if(document.getElementById("mostra").id == "mostra"){
-        document.getElementById("mostra").id = "esconde";
-    }
+    document.getElementById("local1").textContent = local ? local.nome : "";
+    document.getElementById("entregador1").textContent = entregador.entregador;
+    document.getElementById("lanche1").textContent = lanche ? lanche.nome : "";
+    document.getElementById("preco1").textContent = `R$ ${total.toFixed(2)}`;
 }
