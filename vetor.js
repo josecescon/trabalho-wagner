@@ -21,7 +21,7 @@ const relatorio =[
     { id: "relatorio8", entregador: "Dilma" , local :"Conj. Libra"},
 ]
 
-const acompanhamntos=[
+const acompanhamentos=[
     { id: "acompanhamento1", nomea: "Batata Pequena snack", precco:5.00},
     { id: "acompanhamento2", nomea: "Batata do Chefe", precco:7.00},
     { id: "acompanhamento3", nomea: "Batata com Chedar", precco:10.00},
@@ -115,13 +115,13 @@ function criaOption(){
 }
 
 function mandaOpcoes(){
-    const localEntrega = document.getElementById("rua")
+    const localEntrega = document.getElementById("relatorio")
 
 };
 
 function procurarPorId(lista, idProcurado){
     for (let i = 0; i < lista.length; i++){
-        if (lista[i] === idProcurado){
+        if (lista[i].id === idProcurado){
             return lista[i];
         }
     }
@@ -131,34 +131,33 @@ preencherOpcoes();
 
 function gerarRelatorio(){
     const nome = document.getElementById("nome").value;
-    const quantidade = (document.getElementById("quantidade ").value);
+    const quantidade = parseInt(document.getElementById("quantidade ").value);
     const lancheId = document.getElementById("lanches").value;
     const acompanhamentoId = document.getElementById("acompanhamentos").value;
     const bebidaId = document.getElementById("bebidas").value;
     const localId = document.getElementById("locais").value;
 
     var lanche = procurarPorId(lanches, lancheId);
-    var acompanhamento = procurarPorId(acompanhamentos, acompanhamentoId);
+    var acompanhamentos = procurarPorId(acompanhamentos, acompanhamentoId);
     var bebida = procurarPorId(bebidas, bebidaId);
     var local = procurarPorId(locais, localId);
 
-    let total = (lanche.preco * quantidade) + acompanhamento.precco + bebida.predo + local.preco;
+    let total = (lanche.preco * quantidade) + acompanhamntos.preco + bebida.preco;
 }
 function gerarRelatorio() {
     const relatorioHTML = `
 
     <h2> Relatório do pedido</h2>
     <p><strong>Nome do cliente: </strong> ${nome} </p>
-    <p><strong>Nome do Entregador: </strong> ${nome2}</p>
-    <p><strong>Local de Entrega: </strong> ${local}</p>
-    <p><strong>Lanche: </strong> ${lanche1}</p>
-    <p><strong>Lanche: </strong> ${lanche2}</p>
-    <p><strong>Lanche: </strong> ${lanche3}</p>
-    <p><strong>Acompanhamento: </strong> ${acompanhamento}</p>
-    <p><strong>Bebida: </strong> ${bebida}</p>
-    <p><strong>Rua do cliente: </strong> ${rua}</p>
+    <p><strong>Nome do Entregador: </strong> ${relatorio}</p>
+    <p><strong>Local de Entrega: </strong> ${locais}</p>
+    <p><strong>Lanche: </strong> ${lanches.nome} x ${quantidade}</p>
+    <p><strong>Lanche: </strong> ${lanches.nome} x ${quantidade}</p>
+    <p><strong>Lanche: </strong> ${lanches.nome} x ${quantidade}</p>
+    <p><strong>Acompanhamento: </strong> ${acompanhamentos}</p>
+    <p><strong>Bebida: </strong> ${bebidas}</p>
     
     `; 
 
     documento.getElementById("relatorio").innerHTML = relatorioHTML;
-}
+}   
