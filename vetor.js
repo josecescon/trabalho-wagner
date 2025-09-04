@@ -132,10 +132,33 @@ preencherOpcoes();
 function gerarRelatorio(){
     const nome = document.getElementById("nome").value;
     const quantidade = (document.getElementById("quantidade ").value);
-    const lancheId = document.getElementById("acompanhamentos").value;
-    const acompanhamentoId = document.getElementById("bebidas").value;
+    const lancheId = document.getElementById("lanches").value;
+    const acompanhamentoId = document.getElementById("acompanhamentos").value;
+    const bebidaId = document.getElementById("bebidas").value;
     const localId = document.getElementById("locais").value;
 
+    var lanche = procurarPorId(lanches, lancheId);
+    var acompanhamento = procurarPorId(acompanhamentos, acompanhamentoId);
+    var bebida = procurarPorId(bebidas, bebidaId);
+    var local = procurarPorId(locais, localId);
+
+    let total = (lanche.preco * quantidade) + acompanhamento.precco + bebida.predo + local.preco;
+}
+function gerarRelatorio() {
+    const relatorioHTML = `
+
+    <h2> Relatório do pedido</h2>
+    <p><strong>Nome do cliente: </strong> ${nome} </p>
+    <p><strong>Nome do Entregador: </strong> ${nome2}</p>
+    <p><strong>Local de Entrega: </strong> ${local}</p>
+    <p><strong>Lanche: </strong> ${lanche1}</p>
+    <p><strong>Lanche: </strong> ${lanche2}</p>
+    <p><strong>Lanche: </strong> ${lanche3}</p>
+    <p><strong>Acompanhamento: </strong> ${acompanhamento}</p>
+    <p><strong>Bebida: </strong> ${bebida}</p>
+    <p><strong>Rua do cliente: </strong> ${rua}</p>
     
-    
+    `; 
+
+    documento.getElementById("relatorio").innerHTML = relatorioHTML;
 }

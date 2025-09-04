@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/RicLogo3.png" type="image/x-icon">
     <title>Ricardinho's burguer</title>
 </head>
-<body onload="A()">
+<body onload="gerarRelatorio()">
     <script src="vetor.js"></script>
     <header>
         <img src="img/RicLogo3.png" alt="" class="logo">
@@ -18,10 +18,6 @@
         <div class="informacoes">
             <h3>Local de Entrega: &nbsp;</h3>
             <h3 id="local1"></h3><br>
-        </div>
-        <div class="informacoes">
-            <h3>Horario Aproximado: &nbsp;</h3>
-            <h3 id="horario1"></h3><br>
         </div>
         <div class="informacoes">
             <h3>Nome do Entregador: &nbsp;</h3>
@@ -37,7 +33,7 @@
         </div>
 
         <div class="informacoes">
-            <button onclick="window.print()">Gerar PDF do reltório</button>
+            <button onclick="window.print()">Gerar PDF do relatório</button>
         </div>
     </main>
     <footer class="rodape">
@@ -45,3 +41,4 @@
     </footer>
 </body>
 </html>
+
