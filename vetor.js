@@ -6,6 +6,7 @@ const lanches =[
     { id: "lanche4", nome: "Ricardinho Kids", preco: 28.90},
     { id: "lanche5", nome: "Ricardinho Duplo", preco: 40.00},
     { id: "lanche6", nome: "Ricardinho Wraps", preco: 32.00},
+    { id: "lanche7", nome: "Cerqueira em chamas", preco: 42.00},
 ]
 
 const relatorio =[
@@ -27,8 +28,9 @@ const acompanhamntos=[
     { id: "acompanhamento4", nomea: "Batata Grande", precco:9.00},
     { id: "acompanhamento5", nomea: "Batata Média", precco:7.50},
     { id: "acompanhamento6", nomea: "Torta de Maçã", precco:10.00},
-    { id: "acompanhamento7", nomea: "Batata Rústica", precco:8.00},
+    { id: "acompanhamento7", nomea: "Batata com Atum", precco:8.00},
     { id: "acompanhamento8", nomea: "Batata com Bacon", precco:12.00},
+    { id: "acompanhamento8", nomea: "Jp batatas Rústicas", precco:14.00},
 
     ]
  const bebidas=[
@@ -102,7 +104,7 @@ function criaOption(){
         locall5.appendChild(option);
     }
 
-    const bebidas2 = document.getElementById("bebida");
+    const bebidas2 = document.getElementById("bebidas");
     for (let i = 0; i < bebidas.length; i++){
         const item = bebidas[i];
         const option = document.createElement("option");
