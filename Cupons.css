@@ -15,3 +15,10 @@ body{
 .nigger1{
     margin-top: 8%;
 }
+
+#esconde{
+    display: none;
+}
+#mostra{
+    display: block;
+}
