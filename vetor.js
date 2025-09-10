@@ -112,18 +112,27 @@ function gerarRelatorio() {
     const pedido = JSON.parse(localStorage.getItem("pedido"));
     if (!pedido) return;
 
-    const lanche = procurarPorId(lanches, pedido.lanche1);
+    const lanche1 = procurarPorId(lanches, pedido.lanche1);
+    const lanche2 = procurarPorId(lanches, pedido.lanche2);
+    const lanche3 = procurarPorId(lanches, pedido.lanche3);
     const acomp = procurarPorId(acompanhamentos, pedido.acompanhamento);
     const bebida = procurarPorId(bebidas, pedido.bebida);
     const local = procurarPorId(locais, pedido.rua);
 
     const entregador = relatorio[Math.floor(Math.random() * relatorio.length)];
 
-    const total = (lanche ? lanche.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
+    const total = (lanche1 ? lanche1.preco : 0) + (lanche2 ? lanche1.preco : 0) + (lanche3 ? lanche3.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
 
 
     document.getElementById("local1").textContent = local ? local.nome : "";
     document.getElementById("entregador1").textContent = entregador.entregador;
-    document.getElementById("lanche1").textContent = lanche ? lanche.nome : "";
+    
+    let lanchesescolhidos = [];
+    if (lanche1) lanchesescolhidos.push(lanche1.nome);
+    if (lanche2) lanchesescolhidos.push(lanche2.nome);  
+    if (lanche3) lanchesescolhidos.push(lanche3.nome);
+
+    document.getElementById("lanche1").textContent = lanchesescolhidos.join(" | ");
+
     document.getElementById("preco1").textContent = `R$ ${total.toFixed(2)}`;
 }
