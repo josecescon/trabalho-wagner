@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="relatorio.css">
+    <link rel="shortcut icon" href="img/RicLogo3.png" type="image/x-icon">
+    <title>Ricardinho's burguer</title>
+</head>
+<body onload="gerarRelatorio()">
+    <script src="vetor.js"></script>
+    <header>
+        <img src="img/RicLogo3.png" alt="" class="logo">
+    </header>
+    <main>
+        <h1>Relatório de Entrega:</h1>
+        <br>
+        <div>
+            <h3>Nome do cliente: </h3>
+            <h3 id="nomeclienterel"></h3><br>
+        </div>
+        <div class="informacoes">
+            <h3>Local de Entrega: &nbsp;</h3>
+            <h3 id="local1"></h3><br>
+        </div>
+        <div class="informacoes">
+            <h3>Nome do Entregador: &nbsp;</h3>
+            <h3 id="entregador1"></h3><br>
+        </div>
+        <div class="informacoes">
+            <h3>Lanche: &nbsp;</h3>
+            <h3 id="lanche1"></h3><br>
+        </div>
+        <div class="informacoes">
+            <h3>Preço: &nbsp;</h3>
+            <h3 id="preco1"></h3><br>
+        </div>
+
+        <div class="informacoes">
+            <button onclick="window.print()">Gerar PDF do relatório</button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p></p>
+    </footer>
+</body>
+</html>
+
