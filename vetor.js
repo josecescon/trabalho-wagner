@@ -92,14 +92,18 @@ function criaOption() {
 
 function mandaOpcoes() {
     const pedido = {
-        nome: document.getElementById("Nome").value,
+        nome: document.getElementById("nome").value,
         lanche1: document.getElementById("lanches1").value,
         lanche2: document.getElementById("lanches2").value,
         lanche3: document.getElementById("lanches3").value,
         acompanhamento: document.getElementById("acompanhamentos").value,
         bebida: document.getElementById("bebidas").value,
         rua: document.getElementById("rua").value
+
     };
+
+    const nomecliente = document.getElementById("nome").value;
+    sessionStorage.setItem("nomecliente", nomecliente);
 
     localStorage.setItem("pedido", JSON.stringify(pedido));
 }
@@ -112,6 +116,14 @@ function gerarRelatorio() {
     const pedido = JSON.parse(localStorage.getItem("pedido"));
     if (!pedido) return;
 
+    const nome = sessionStorage.getItem("nomecliente");
+
+    if(nome){
+        document.getElementById("nomeclienterel").textContent = nome;
+
+
+    }
+
     const lanche1 = procurarPorId(lanches, pedido.lanche1);
     const lanche2 = procurarPorId(lanches, pedido.lanche2);
     const lanche3 = procurarPorId(lanches, pedido.lanche3);
@@ -122,7 +134,6 @@ function gerarRelatorio() {
     const entregador = relatorio[Math.floor(Math.random() * relatorio.length)];
 
     const total = (lanche1 ? lanche1.preco : 0) + (lanche2 ? lanche1.preco : 0) + (lanche3 ? lanche3.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
-
 
     document.getElementById("local1").textContent = local ? local.nome : "";
     document.getElementById("entregador1").textContent = entregador.entregador;
