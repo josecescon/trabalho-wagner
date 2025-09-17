@@ -133,7 +133,7 @@ function gerarRelatorio() {
 
     const entregador = relatorio[Math.floor(Math.random() * relatorio.length)];
 
-    const total = (lanche1 ? lanche1.preco : 0) + (lanche2 ? lanche1.preco : 0) + (lanche3 ? lanche3.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
+    const total = (lanche1 ? lanche1.preco : 0) + (lanche2 ? lanche2.preco : 0) + (lanche3 ? lanche3.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
 
     document.getElementById("local1").textContent = local ? local.nome : "";
     document.getElementById("entregador1").textContent = entregador.entregador;
@@ -146,4 +146,14 @@ function gerarRelatorio() {
     document.getElementById("lanche1").textContent = lanchesescolhidos.join(" | ");
 
     document.getElementById("preco1").textContent = `R$ ${total.toFixed(2)}`;
+
+    let acompescolhidos = [];
+    if (acomp) acompescolhidos.push(acomp.nome);
+
+    document.getElementById("acomp").textContent = acompescolhidos.join("")
+
+    let bebidass = [];
+    if (bebida) bebidass.push(bebida.nome);
+
+    document.getElementById("bebida").textContent = bebidass.join("")
 }
