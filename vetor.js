@@ -157,3 +157,20 @@ function gerarRelatorio() {
 
     document.getElementById("bebida").textContent = bebidass.join("")
 }
+
+function MaisLanche(valor) {
+    valor = parseInt(valor);
+    let idvar = `mais_lanche${valor}`;
+    document.getElementById(idvar).innerHTML = `
+        <label for="pagamento">Lanches:</label>
+        <select name="lanches" id="lanches${valor}">
+        </select>
+
+        <br><br>
+        <div id="mais_lanche${valor+1}"></div>
+    `;
+
+    document.getElementById('botao_mais_lanche').value = parseInt(valor) + 1;
+
+
+}
