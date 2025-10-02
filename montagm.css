@@ -5,9 +5,10 @@
     padding: 20px;
     margin-top: 10px;
     background-color: #f8f9fa;
+    
 }
 
-.destination {
+.igredientes {
     position: relative;
     height: 200px;
     background-size: cover;
@@ -36,4 +37,59 @@
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
+}
+
+#a{
+   background-image: url(img/MONTAGEM/Pao-de-Hamburguer-Brioche-MAX-BIMBO-QSR.jpg);
+}
+
+#b{
+    background-image: url(img/MONTAGEM/baguete.jpeg);
+}
+#c{
+    background-image: url(img/MONTAGEM/alface.jpeg);
+}
+#d{
+    background-image: url(img/MONTAGEM/tomate.jpeg);
+}
+#e{
+    background-image: url();
+}
+#f{
+    background-image: url();
+
+}
+#g{
+    background-image: url();
+
+}
+#h{
+    background-image: url();
+}
+#i{
+    background-image: url();
+}
+#j{
+    background-image: url();
+}
+#k{
+    background-image: url();
+}
+#l{
+    background-image: url();
+}
+#m{
+    background-image: url();
+}
+#n{
+    background-image: url();
+}
+#o{
+    background-image: url();
+}
+#p{
+    background-image: url();
+}
+#q{
+    background-image: url();
 }
