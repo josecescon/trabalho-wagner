@@ -157,3 +157,11 @@ function gerarRelatorio() {
 
     document.getElementById("bebida").textContent = bebidass.join("")
 }
+function ativarElemento() {
+    const elemento = document.getElementById('elemento-teste');
+    elemento.classList.add('ativo');
+}
+function alternarElemento() {
+    const elemento = document.getElementById('elemento-teste');
+    elemento.classList.toggle('ativo');
+}

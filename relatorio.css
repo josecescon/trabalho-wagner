@@ -1,13 +1,9 @@
 body{
     margin: 0%;
     background-image: url(img/fundotop.png);
-    color: white;
 }
 .logo{
     width: 150px;
-}
-header{
-    background-color: rgba(32, 18, 15, 255);
 }
 main{
     text-align: center;
@@ -29,4 +25,14 @@ main{
 }
 body{
          font-family: 'Adonais'
+}
+.meu-elemento {
+  color: black;
+  background-color: lightgray;
+  transition: background-color 0.5s ease; /* Adiciona uma transição suave */
+}
+
+.ativo {
+  background-color: black;
+  color: white;
 }
