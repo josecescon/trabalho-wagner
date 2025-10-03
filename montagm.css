@@ -4,7 +4,7 @@
     gap: 20px;
     padding: 20px;
     margin-top: 10px;
-    background-color: #f8f9fa;
+    background-color: rgba(32, 18, 15, 255);
     
 }
 
@@ -39,6 +39,11 @@
     text-align: center;
 }
 
+body {
+    background-color: rgba(32, 18, 15, 255);
+}
+
+
 #a{
    background-image: url(img/MONTAGEM/Pao-de-Hamburguer-Brioche-MAX-BIMBO-QSR.jpg);
 }
@@ -67,13 +72,13 @@
     background-image: url(img/MONTAGEM/molho_alho.jpeg);
 }
 #i{
-    background-image: url();
+    background-image: url(img/MONTAGEM/maionese.jpeg);
 }
 #j{
-    background-image: url();
+    background-image: url(img/MONTAGEM/mostarda.jpeg);
 }
 #k{
-    background-image: url();
+    background-image: url(img/MONTAGEM/ketchup.jpeg);
 }
 #l{
     background-image: url();
