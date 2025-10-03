@@ -1,6 +1,6 @@
 body{
     margin: 0%;
-    background-image: url(img/fundotop.png);
+    background-color: rgb(78, 0, 0);
 }
 .logo{
     width: 150px;
@@ -28,11 +28,18 @@ body{
 }
 .meu-elemento {
   color: black;
-  background-color: lightgray;
-  transition: background-color 0.5s ease; /* Adiciona uma transição suave */
+  background-color: rgb(255, 255, 255);
+  background-blend-mode: multiply;
+  background-image: url(img/fundotop.png);
+  filter: invert(1);
+  transition: background-color 0.5s ease;
 }
 
 .ativo {
   background-color: black;
   color: white;
+  background-blend-mode: multiply;
+  background-image: url(img/fundotop.png);
+  filter: invert(0);
 }
+
