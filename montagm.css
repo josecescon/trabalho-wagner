@@ -60,14 +60,25 @@ body {
 #e{
     background-image: url(img/MONTAGEM/picles.jpeg);
 }
+#e1{
+    background-image: url(img/MONTAGEM/couve.jpeg);
+}
 #f{
     background-image: url(img/MONTAGEM/cebola_car.jpeg);
 
 }
 #g{
     background-image: url(img/MONTAGEM/cebola_frita.jpeg);
-
 }
+
+#g1{
+    background-image: url(img/MONTAGEM/batata_frita.jpeg);
+}
+
+#g2{
+    background-image: url(img/MONTAGEM/bacon.jpeg);
+}
+
 #h{
     background-image: url(img/MONTAGEM/molho_alho.jpeg);
 }
@@ -97,4 +108,16 @@ body {
 }
 #q{
     background-image: url();
+}
+.aa{
+    color: #fff;
+}
+.quantidade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgba(32, 18, 15, 255);
+    
 }
