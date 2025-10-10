@@ -47,7 +47,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     max-height: 50px;
-    max-width: 50px;
+    max-width: 150px;
     gap: 20px;
     padding: 20px;
     margin-top: 50px;
