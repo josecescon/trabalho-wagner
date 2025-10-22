@@ -63,6 +63,13 @@ body {
 #b{
     background-image: url(img/MONTAGEM/baguete.jpeg);
 }
+#b2{
+    background-image: url(img/MONTAGEM/frances.jpeg);
+}
+#b3{
+    background-image: url(img/MONTAGEM/PaoAu.png);
+    background-color: #fff;
+}
 #c{
     background-image: url(img/MONTAGEM/alface.jpeg);
 }
@@ -102,24 +109,6 @@ body {
 }
 #k{
     background-image: url(img/MONTAGEM/ketchup.jpeg);
-}
-#l{
-    background-image: url();
-}
-#m{
-    background-image: url();
-}
-#n{
-    background-image: url();
-}
-#o{
-    background-image: url();
-}
-#p{
-    background-image: url();
-}
-#q{
-    background-image: url();
 }
 .aa{
     color: #fff;
