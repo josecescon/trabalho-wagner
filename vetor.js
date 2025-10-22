@@ -176,3 +176,18 @@ function alternarElemento() {
     const elemento = document.getElementById('elemento-teste');
     elemento.classList.toggle('ativo');
 }
+const v_montagem = [
+
+   {id: "n_brioche", nome:"pao brioche", preco: 3.00}
+   {id:"n_baguete", nome: " pao baguete", preco: 8.00}
+   {id: "n_frances", nome: "pao frances", preco: 2.00}
+   {id: "n_autra", nome: "pao autraliano", preco:4.00}
+   
+
+
+
+]
+
+
+
+
