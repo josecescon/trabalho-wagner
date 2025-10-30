@@ -177,7 +177,6 @@ function alternarElemento() {
     elemento.classList.toggle('ativo');
 }
 const v_montagem = [
-
    {id: "n_brioche", nome: "pao brioche", preco: 3.00},
    {id: "n_baguete", nome: " pao baguete", preco: 8.00},
    {id: "n_frances", nome: "pao frances", preco: 2.00},
@@ -190,20 +189,12 @@ const v_montagem = [
    {id: "n_onion",nome:"onion ring", precp: 1.00},
    {id: "n_fried", nome: "batata frita",preco: 2.00},
    {id: "n_bacon", nome: "bacon", ṕreco: 3.00},
-   {id:"n_alho", nome: "alho",preco: 2.00},
+   {id: "n_alho", nome: "alho",preco: 2.00},
    {id: "n_maionese", nome: "maionese", preco: 1.50},
    {id: "n_mostarda", nome: "mostarda", preco: 1.50},
    {id: "n_ketchup", nome: "ketchup", preco: 1.50},
-   
+];
 
-   
-
-   
-
-
-
-]
-
-
-
-
+function nm_brioche(){
+        
+}
