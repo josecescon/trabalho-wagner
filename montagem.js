@@ -1,20 +1,24 @@
 const quantidades = {
-    brioche: 1,
+    brioche: 0,
     baguete: 0,
     frances: 0,
     austra: 0,
-    alface: 1,
-    tomate: 1,
-    picles: 1,
-    couve: 1,
-    cebola_car: 1,
-    onion: 1,
-    fried: 1,
-    bacon: 1,
+    alface: 0,
+    tomate: 0,
+    picles: 0,
+    couve: 0,
+    cebola_car: 0,
+    onion: 0,
+    fried: 0,
+    bacon: 0,
     alho: 0,
-    maionese: 1,
-    mostarda: 1,
-    ketchup: 1
+    maionese: 0,
+    mostarda: 0,
+    ketchup: 0,
+    artesanal: 0,
+    frango_empanado: 0,
+    carne_vegana: 0,
+    carne_costela: 0
 };
 
 const v_montagem_data = [
@@ -34,6 +38,12 @@ const v_montagem_data = [
    {id: "maionese", nome: "maionese", preco: 1.50},
    {id: "mostarda", nome: "mostarda", preco: 1.50},
    {id: "ketchup", nome: "ketchup", preco: 1.50},
+   {id: "artesanal", nome: "carne artesanal", preco: 7.00},
+   {id: "frango_empanado", nome:"frango artesanal", preco: 4.00},
+   {id: "carne_vegana", nome: "carne vegana", preco: 7.00},
+   {id: "carne_costela", nome: "carne de costela", preco: 7.00},
+
+
 ];
 
 function atualizarContador(nomeItem, valor) {
