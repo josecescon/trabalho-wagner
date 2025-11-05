@@ -18,7 +18,7 @@ const quantidades = {
     artesanal: 0,
     frango_empanado: 0,
     carne_vegana: 0,
-    carne_costela: 0
+    carne_costela: 0,
 };
 
 const v_montagem_data = [
@@ -26,18 +26,22 @@ const v_montagem_data = [
    {id: "baguete", nome: " pao baguete", preco: 8.00},
    {id: "frances", nome: "pao frances", preco: 2.00},
    {id: "austra", nome: "pao autraliano", preco: 4.00},
+
    {id: "alface", nome: "alface", preco: 0.30},
    {id: "tomate", nome: "tomate", preco: 0.30},
    {id: "picles", nome: "picles", preco: 0.40},
    {id: "couve", nome: "couve", preco: 0.30},
+
    {id: "cebola_car", nome: "cebola caramelizada", preco: 1.00},
    {id: "onion", nome: "onion ring", preco: 1.00},
    {id: "fried", nome: "batata frita", preco: 2.00},
    {id: "bacon", nome: "bacon", preco: 3.00},
+
    {id: "alho", nome: "alho", preco: 2.00},
    {id: "maionese", nome: "maionese", preco: 1.50},
    {id: "mostarda", nome: "mostarda", preco: 1.50},
    {id: "ketchup", nome: "ketchup", preco: 1.50},
+
    {id: "artesanal", nome: "carne artesanal", preco: 7.00},
    {id: "frango_empanado", nome:"frango artesanal", preco: 4.00},
    {id: "carne_vegana", nome: "carne vegana", preco: 7.00},
@@ -79,6 +83,15 @@ function n_frances() { atualizarContador('frances', 1); }
 function nm_frances() { atualizarContador('frances', -1); }
 function n_austra() { atualizarContador('austra', 1); }
 function nm_austra() { atualizarContador('austra', -1); }
+
+function n_artesanal(){ atualizarContador('artesanal', 1);}
+function nm_artesanal(){ atualizarContador('artesanal', -1);}
+function n_costela(){ atualizarContador('carne_costela', 1);}
+function nm_costela(){ atualizarContador('carne_costela', -1);}
+function n_frango(){ atualizarContador('frango_empanado', 1);}
+function nm_frango(){ atualizarContador('frango_empanado', -1);}
+function n_vegano(){ atualizarContador('carne_vegana', 1);}
+function nm_vegano(){ atualizarContador('carne_vegana', -1);}
 
 function n_alface() { atualizarContador('alface', 1); }
 function nm_alface() { atualizarContador('alface', -1); }
