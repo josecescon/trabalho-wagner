@@ -53,17 +53,6 @@ const locais = [
     { id: "rua7", nome: "Conj Libra" }
 ];
 
-const montagem = [
-    { id: "", nome: ""},
-    { id: "", nome: ""},
-    { id: "", nome: ""},
-    { id: "", nome: ""},
-    { id: "", nome: ""},
-    { id: "", nome: ""},
-    { id: "", nome: ""},
-    { id: "", nome: ""},
-    
-]
 
 function criaOption() {
     ["lanches1", "lanches2", "lanches3"].forEach(id => {

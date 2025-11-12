@@ -121,12 +121,3 @@ function n_ketchup() { atualizarContador('ketchup', 1); }
 function nm_ketchup() { atualizarContador('ketchup', -1); }
 
 document.addEventListener('DOMContentLoaded', inicializarContadores);
-
-function ativarElemento() {
-    const elemento = document.getElementById('elemento-teste');
-    elemento.classList.add('ativo');
-}
-function alternarElemento() {
-    const elemento = document.getElementById('elemento-teste');
-    elemento.classList.toggle('ativo');
-}
