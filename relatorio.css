@@ -46,3 +46,12 @@ body{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 208, 0);
 }
+
+@media print {
+    .no-print { display: none !important; }
+    .meu-elemento { visibility: hidden; }
+    body { visibility: visible; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; margin: 0;}
+    .informacoes { visibility: visible; font-size: 17pt;}
+    .logo { visibility: visible; width: 400px; height: auto;}
+    
+}
