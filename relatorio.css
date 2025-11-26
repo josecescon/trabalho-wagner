@@ -18,13 +18,13 @@ main{
     width: 1870px;
 }
 @font-face {
-         font-family: 'Adonais';
-         src: url(img/adonais/Adonais.ttf);
-         font-weight: normal;
-         font-style: normal;
+    font-family: 'Adonais';
+    src: url(img/adonais/Adonais.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 body{
-         font-family: 'Adonais'
+        font-family: 'Adonais'
 }
 .meu-elemento {
   color: black;
@@ -40,3 +40,9 @@ body{
   background-image: url(img/fundotop.png);
 }
 
+.voltar {
+    display: flex;
+    margin-left: 43%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 208, 0);
+}
