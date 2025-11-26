@@ -1,11 +1,12 @@
 const lanches = [
-    { id: "lanche1", nome: "Ricardinho Picante", preco: 32.50 },
-    { id: "lanche2", nome: "Vegan Ricardinho", preco: 35.00 },
-    { id: "lanche3", nome: "Ricardinho Classic", preco: 20.00 },
-    { id: "lanche4", nome: "Ricardinho Kids", preco: 28.90 },
-    { id: "lanche5", nome: "Ricardinho Duplo", preco: 40.00 },
-    { id: "lanche6", nome: "Ricardinho Wraps", preco: 32.00 },
-    { id: "lanche7", nome: "Cerqueira em chamas", preco: 42.00 }
+    { id: "lanche1", nome: "Nenhum", preco: 0.00 },
+    { id: "lanche2", nome: "Ricardinho Picante", preco: 32.50 },
+    { id: "lanche3", nome: "Vegan Ricardinho", preco: 35.00 },
+    { id: "lanche4", nome: "Ricardinho Classic", preco: 20.00 },
+    { id: "lanche5", nome: "Ricardinho Kids", preco: 28.90 },
+    { id: "lanche6", nome: "Ricardinho Duplo", preco: 40.00 },
+    { id: "lanche7", nome: "Ricardinho Wraps", preco: 32.00 },
+    { id: "lanche8", nome: "Cerqueira em chamas", preco: 42.00 }
 ];
 
 const relatorio = [
@@ -20,39 +21,41 @@ const relatorio = [
 ];
 
 const acompanhamentos = [
-    { id: "acomp1", nome: "Batata Pequena snack", preco: 5.00 },
-    { id: "acomp2", nome: "Batata do Chefe", preco: 7.00 },
-    { id: "acomp3", nome: "Batata com Cheddar", preco: 10.00 },
-    { id: "acomp4", nome: "Batata Grande", preco: 9.00 },
-    { id: "acomp5", nome: "Batata Média", preco: 7.50 },
-    { id: "acomp6", nome: "Torta de Maçã", preco: 10.00 },
-    { id: "acomp7", nome: "Batata com Atum", preco: 8.00 },
-    { id: "acomp8", nome: "Batata com Bacon", preco: 12.00 },
-    { id: "acomp9", nome: "JP Batatas Rústicas", preco: 14.00 }
+    { id: "acomp1", nome: "Nenhum", preco: 0.0 },
+    { id: "acomp2", nome: "Batata Pequena snack", preco: 5.00 },
+    { id: "acomp3", nome: "Batata do Chefe", preco: 7.00 },
+    { id: "acomp4", nome: "Batata com Cheddar", preco: 10.00 },
+    { id: "acomp5", nome: "Batata Grande", preco: 9.00 },
+    { id: "acomp6", nome: "Batata Média", preco: 7.50 },
+    { id: "acomp7", nome: "Torta de Maçã", preco: 10.00 },
+    { id: "acomp8", nome: "Batata com Atum", preco: 8.00 },
+    { id: "acomp9", nome: "Batata com Bacon", preco: 12.00 },
+    { id: "acomp10", nome: "JP Batatas Rústicas", preco: 14.00 }
 ];
 
 const bebidas = [
-    { id: "beb1", nome: "Coca Cola", preco: 6.00 },
-    { id: "beb2", nome: "Fanta Laranja", preco: 6.00 },
-    { id: "beb3", nome: "Fanta Uva", preco: 6.00 },
-    { id: "beb4", nome: "Sprite", preco: 6.00 },
-    { id: "beb5", nome: "Chá Gelado", preco: 7.00 },
-    { id: "beb6", nome: "Suco de Laranja", preco: 5.00 },
-    { id: "beb7", nome: "Suco de Beterraba", preco: 5.00 },
-    { id: "beb8", nome: "Água com Gás", preco: 4.50 }
+    { id: "beb1", nome: "Nenhuma", preco: 0.00 },
+    { id: "beb2", nome: "Coca Cola", preco: 6.00 },
+    { id: "beb3", nome: "Fanta Laranja", preco: 6.00 },
+    { id: "beb4", nome: "Fanta Uva", preco: 6.00 },
+    { id: "beb5", nome: "Sprite", preco: 6.00 },
+    { id: "beb6", nome: "Chá Gelado", preco: 7.00 },
+    { id: "beb7", nome: "Suco de Laranja", preco: 5.00 },
+    { id: "beb8", nome: "Suco de Beterraba", preco: 5.00 },
+    { id: "beb9", nome: "Água com Gás", preco: 4.50 }
 ];
 
 const locais = [
-    { id: "rua0", nome: "Jorge Schimmelpfeng" },
-    { id: "rua1", nome: "Morumbi" },
-    { id: "rua2", nome: "Ayrton Senna" },
-    { id: "rua3", nome: "Felipe Wandscheer" },
-    { id: "rua4", nome: "Av Paraná" },
-    { id: "rua5", nome: "Av Brasil" },
-    { id: "rua6", nome: "Rua Urupês" },
-    { id: "rua7", nome: "Conj Libra" }
+    { id: "rua0", nome: "Retirar Na Loja" },
+    { id: "rua1", nome: "Jorge Schimmelpfeng" },
+    { id: "rua2", nome: "Morumbi" },
+    { id: "rua3", nome: "Ayrton Senna" },
+    { id: "rua4", nome: "Felipe Wandscheer" },
+    { id: "rua5", nome: "Av Paraná" },
+    { id: "rua6", nome: "Av Brasil" },
+    { id: "rua7", nome: "Rua Urupês" },
+    { id: "rua8", nome: "Conj Libra" }
 ];
-
 
 function criaOption() {
     ["lanches1", "lanches2", "lanches3"].forEach(id => {
