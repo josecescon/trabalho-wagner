@@ -23,3 +23,12 @@ body{
     height: 305px;
     background-color: rgba(55, 3, 0, 0.8);
 }
+#negrudoc{
+ width: 100px;
+
+
+}
+footer{
+ text-align: center;
+ padding-right: 65%;
+}
