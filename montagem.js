@@ -75,6 +75,30 @@ function inicializarContadores() {
     }
 }
 
+function salvarMontagem() {
+    let pedidoMontado = [];
+    let precoTotal = 0;
+
+    v_montagem_data.forEach(itemData => {
+        const id = itemData.id;
+        const quantidade = quantidades[id];
+
+        if (quantidade > 0) {
+            const itemDetalhe = {
+                nome: itemData.nome,
+                quantidade: quantidade,
+                precoUnitario: itemData.preco,
+                subtotal: quantidade * itemData.preco
+            };
+            pedidoMontado.push(itemDetalhe);
+            precoTotal += itemDetalhe.subtotal;
+        }
+    });
+
+    localStorage.setItem("pedidoMontagem", JSON.stringify(pedidoMontado));
+    localStorage.setItem("totalMontagem", precoTotal.toFixed(2));
+}
+
 function n_brioche() { atualizarContador('brioche', 1); }
 function nm_brioche() { atualizarContador('brioche', -1); }
 function n_baguete() { atualizarContador('baguete', 1); }

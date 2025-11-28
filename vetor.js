@@ -117,53 +117,103 @@ function procurarPorId(lista, idProcurado) {
 
 function gerarRelatorio() {
     const pedido = JSON.parse(localStorage.getItem("pedido"));
-    if (!pedido) return;
-
     const nome = sessionStorage.getItem("nomecliente");
+    
+    let subtotalGeral = 0;
+    
+    document.getElementById("nomeclienterel").textContent = nome ? nome : "Não informado";
+    
+    const pedidoMontagemJSON = localStorage.getItem("pedidoMontagem");
+    
+    if (pedidoMontagemJSON) {
+        const pedidoMontado = JSON.parse(pedidoMontagemJSON);
+        const totalMontagem = parseFloat(localStorage.getItem("totalMontagem")) || 0;
+        
+        subtotalGeral = totalMontagem;
+        
+        let resumoMontagem = "";
+        
+        pedidoMontado.forEach(item => {
+            resumoMontagem += `${item.quantidade}x ${item.nome} (R$${item.precoUnitario.toFixed(2)}) | `;
+        });
 
-    if(nome){
-        document.getElementById("nomeclienterel").textContent = nome;
+        if (resumoMontagem.length > 0) {
+             resumoMontagem = resumoMontagem.slice(0, -3); 
+        }
 
+        const elementoMontado = document.getElementById("lancheMontado");
+        if (elementoMontado) {
+            elementoMontado.textContent = resumoMontagem;
+        }
 
+        document.getElementById("lanche1").textContent = "Lanche Montado";
+        document.getElementById("acomp").textContent = "N/A";
+        document.getElementById("bebida").textContent = "N/A";
+        
+        const entregador = relatorio[Math.floor(Math.random() * relatorio.length)];
+        const localAleatorio = relatorio[Math.floor(Math.random() * relatorio.length)]; 
+        document.getElementById("local1").textContent = localAleatorio.local;
+        document.getElementById("entregador1").textContent = entregador.entregador;
+        
+        localStorage.removeItem("pedidoMontagem");
+        localStorage.removeItem("totalMontagem");
+
+    } else if (pedido) {
+        const lanche1 = procurarPorId(lanches, pedido.lanche1);
+        const lanche2 = procurarPorId(lanches, pedido.lanche2);
+        const lanche3 = procurarPorId(lanches, pedido.lanche3);
+        const acomp = procurarPorId(acompanhamentos, pedido.acompanhamento);
+        const bebida = procurarPorId(bebidas, pedido.bebida);
+        const local = procurarPorId(locais, pedido.rua);
+
+        const entregador = relatorio[Math.floor(Math.random() * relatorio.length)];
+
+        const totalFixo = (lanche1 ? lanche1.preco : 0) + (lanche2 ? lanche2.preco : 0) + (lanche3 ? lanche3.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
+        subtotalGeral = totalFixo;
+
+        document.getElementById("local1").textContent = local ? local.nome : "";
+        document.getElementById("entregador1").textContent = entregador.entregador;
+        
+        let lanchesescolhidos = [];
+        if (lanche1 && lanche1.preco > 0) lanchesescolhidos.push(lanche1.nome);
+        if (lanche2 && lanche2.preco > 0) lanchesescolhidos.push(lanche2.nome);  
+        if (lanche3 && lanche3.preco > 0) lanchesescolhidos.push(lanche3.nome);
+
+        document.getElementById("lanche1").textContent = lanchesescolhidos.join(" | ");
+
+        let acompescolhidos = [];
+        if (acomp && acomp.preco > 0) acompescolhidos.push(acomp.nome);
+
+        document.getElementById("acomp").textContent = acompescolhidos.join("")
+
+        let bebidass = [];
+        if (bebida && bebida.preco > 0) bebidass.push(bebida.nome);
+
+        document.getElementById("bebida").textContent = bebidass.join("")
+        
+        localStorage.removeItem("pedido"); 
+    } else {
+        document.getElementById("lanche1").textContent = "Nenhum pedido encontrado.";
+        document.getElementById("acomp").textContent = "N/A";
+        document.getElementById("bebida").textContent = "N/A";
+        document.getElementById("local1").textContent = "N/A";
+        document.getElementById("entregador1").textContent = "N/A";
     }
 
-    const lanche1 = procurarPorId(lanches, pedido.lanche1);
-    const lanche2 = procurarPorId(lanches, pedido.lanche2);
-    const lanche3 = procurarPorId(lanches, pedido.lanche3);
-    const acomp = procurarPorId(acompanhamentos, pedido.acompanhamento);
-    const bebida = procurarPorId(bebidas, pedido.bebida);
-    const local = procurarPorId(locais, pedido.rua);
+    const taxa = subtotalGeral * 0.15;
+    const totalPagar = subtotalGeral + taxa;
 
-    const entregador = relatorio[Math.floor(Math.random() * relatorio.length)];
-
-    const total = (lanche1 ? lanche1.preco : 0) + (lanche2 ? lanche2.preco : 0) + (lanche3 ? lanche3.preco : 0) + (acomp ? acomp.preco : 0) + (bebida ? bebida.preco : 0);
-
-    document.getElementById("local1").textContent = local ? local.nome : "";
-    document.getElementById("entregador1").textContent = entregador.entregador;
-    
-    let lanchesescolhidos = [];
-    if (lanche1) lanchesescolhidos.push(lanche1.nome);
-    if (lanche2) lanchesescolhidos.push(lanche2.nome);  
-    if (lanche3) lanchesescolhidos.push(lanche3.nome);
-
-    document.getElementById("lanche1").textContent = lanchesescolhidos.join(" | ");
-
-    document.getElementById("preco1").textContent = `R$ ${total.toFixed(2)}`;
-
-    let acompescolhidos = [];
-    if (acomp) acompescolhidos.push(acomp.nome);
-
-    document.getElementById("acomp").textContent = acompescolhidos.join("")
-
-    let bebidass = [];
-    if (bebida) bebidass.push(bebida.nome);
-
-    document.getElementById("bebida").textContent = bebidass.join("")
+    document.getElementById("subtotal_rel").textContent = `R$ ${subtotalGeral.toFixed(2)}`;
+    document.getElementById("taxa_rel").textContent = `R$ ${taxa.toFixed(2)}`;
+    document.getElementById("preco1").textContent = `R$ ${totalPagar.toFixed(2)}`;
 }
+
+
 function ativarElemento() {
     const elemento = document.getElementById('elemento-teste');
     elemento.classList.add('ativo');
 }
+
 function alternarElemento() {
     const elemento = document.getElementById('elemento-teste');
     elemento.classList.toggle('ativo');
