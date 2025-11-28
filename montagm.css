@@ -1,3 +1,11 @@
+.nigger{
+    height: 200px;
+}
+
+header{
+    text-align: center;
+}
+
 .destination-grid {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
