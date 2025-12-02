@@ -99,50 +99,150 @@ function salvarMontagem() {
     localStorage.setItem("totalMontagem", precoTotal.toFixed(2));
 }
 
-function n_brioche() { atualizarContador('brioche', 1); }
+function n_brioche() { 
+    if (quantidades.brioche < 1){ 
+        atualizarContador('brioche', 1); 
+    };
+};
 function nm_brioche() { atualizarContador('brioche', -1); }
-function n_baguete() { atualizarContador('baguete', 1); }
+
+function n_baguete() { 
+    if (quantidades.baguete < 1){
+        atualizarContador('baguete', 1); 
+    };
+};
 function nm_baguete() { atualizarContador('baguete', -1); }
-function n_frances() { atualizarContador('frances', 1); }
+
+function n_frances() {
+    if(quantidades.frances < 1){ 
+        atualizarContador('frances', 1); 
+    };
+};
 function nm_frances() { atualizarContador('frances', -1); }
-function n_austra() { atualizarContador('austra', 1); }
+
+function n_austra() {
+    if(quantidades.austra < 1){ 
+        atualizarContador('austra', 1); 
+    };
+};
 function nm_austra() { atualizarContador('austra', -1); }
 
-function n_artesanal(){ atualizarContador('artesanal', 1);}
+
+function n_artesanal(){
+    if(quantidades.artesanal < 5){
+        atualizarContador('artesanal', 1);
+    };
+};
 function nm_artesanal(){ atualizarContador('artesanal', -1);}
-function n_costela(){ atualizarContador('carne_costela', 1);}
+
+function n_costela(){
+    if(quantidades.carne_costela < 5){ 
+        atualizarContador('carne_costela', 1);
+    };
+;}
 function nm_costela(){ atualizarContador('carne_costela', -1);}
-function n_frango(){ atualizarContador('frango_empanado', 1);}
+
+function n_frango(){ 
+    if(quantidades.frango_empanado < 5){ 
+        atualizarContador('frango_empanado', 1);
+    };
+};
 function nm_frango(){ atualizarContador('frango_empanado', -1);}
-function n_vegano(){ atualizarContador('carne_vegana', 1);}
+
+function n_vegano(){ 
+    if(quantidades.carne_vegana < 5){ 
+        atualizarContador('carne_vegana', 1);
+    };
+};
 function nm_vegano(){ atualizarContador('carne_vegana', -1);}
 
-function n_alface() { atualizarContador('alface', 1); }
+
+function n_alface() { 
+    if(quantidades.alface < 3){ 
+        atualizarContador('alface', 1); 
+    };
+};
 function nm_alface() { atualizarContador('alface', -1); }
-function n_tomate() { atualizarContador('tomate', 1); }
+
+function n_tomate() { 
+    if(quantidades.tomate < 7){     
+        atualizarContador('tomate', 1); 
+    };
+};
 function nm_tomate() { atualizarContador('tomate', -1); }
-function n_picles() { atualizarContador('picles', 1); }
+
+function n_picles() { 
+    if(quantidades.picles < 5){     
+        atualizarContador('picles', 1); 
+    };
+};
 function nm_picles() { atualizarContador('picles', -1); }
-function n_couve() { atualizarContador('couve', 1); }
+
+function n_couve() { 
+    if(quantidades.couve < 3){     
+        atualizarContador('couve', 1); 
+    };
+};
 function nm_couve() { atualizarContador('couve', -1); }
 
-function n_cebola_car() { atualizarContador('cebola_car', 1); }
+
+function n_cebola_car() { 
+    if(quantidades.cebola_car < 6){ 
+        atualizarContador('cebola_car', 1); 
+    };
+};
 function nm_cebola_car() { atualizarContador('cebola_car', -1); }
-function n_onion() { atualizarContador('onion', 1); }
+
+function n_onion() { 
+    if(quantidades.onion < 5){     
+        atualizarContador('onion', 1); 
+    };
+};
 function nm_onion() { atualizarContador('onion', -1); }
-function n_fried() { atualizarContador('fried', 1); }
+
+function n_fried() { 
+    if(quantidades.fried < 8){         
+        atualizarContador('fried', 1); 
+    };
+};
 function nm_fried() { atualizarContador('fried', -1); }
-function n_bacon() { atualizarContador('bacon', 1); }
+
+function n_bacon() { 
+    if(quantidades.bacon < 10){     
+        atualizarContador('bacon', 1); 
+    }
+}
 function nm_bacon() { atualizarContador('bacon', -1); }
 
-function n_alho() { atualizarContador('alho', 1); }
+
+function n_alho() { 
+    if(quantidades.alho < 3){     
+        atualizarContador('alho', 1);
+    }
+}
 function nm_alho() { atualizarContador('alho', -1); }
-function n_maionese() { atualizarContador('maionese', 1); }
+
+function n_maionese() { 
+    if(quantidades.maionese < 3){ 
+        atualizarContador('maionese', 1); 
+    }
+}
 function nm_maionese() { atualizarContador('maionese', -1); }
-function n_mostarda() { atualizarContador('mostarda', 1); }
+
+function n_mostarda() { 
+    if(quantidades.mostarda < 3){    
+        atualizarContador('mostarda', 1); 
+    }
+}
 function nm_mostarda() { atualizarContador('mostarda', -1); }
-function n_ketchup() { atualizarContador('ketchup', 1); }
+
+function n_ketchup() { 
+    if(quantidades.ketchup < 3){ 
+        atualizarContador('ketchup', 1); 
+    }   
+}
 function nm_ketchup() { atualizarContador('ketchup', -1); }
+
 
 document.addEventListener('DOMContentLoaded', inicializarContadores);
 
