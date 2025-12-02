@@ -145,3 +145,24 @@ function n_ketchup() { atualizarContador('ketchup', 1); }
 function nm_ketchup() { atualizarContador('ketchup', -1); }
 
 document.addEventListener('DOMContentLoaded', inicializarContadores);
+
+function reset(){   
+
+ quantidades.alface = 0;
+ quantidades.bacon = 0;
+ quantidades.austra = 0;
+ quantidades.baguete = 0;
+ quantidades.alho = 0;
+ quantidades.brioche = 0; 
+ quantidades.carne_costela = 0;
+ quantidades.carne_vegana = 0;
+ quantidades.cebola_car = 0;
+ quantidades.couve= 0;
+ quantidades.picles= 0;
+ quantidades.ketchup= 0;
+ quantidades.onion = 0;
+ quantidades.artesanal = 0;
+ quantidades.brioche = 0;
+ quantidades.maionese = 0;
+ quantidades.mostarda = 0;
+}
