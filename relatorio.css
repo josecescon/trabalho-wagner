@@ -11,11 +11,11 @@ main{
 }
 .informacoes{
     display: flex;
-    margin-left: 43%;
+    margin-left: 38%;
 }
 main{
     height: 935px;
-    width: 1870px;
+    width: 100%;
 }
 @font-face {
     font-family: 'Adonais';

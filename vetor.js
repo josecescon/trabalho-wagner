@@ -200,11 +200,10 @@ function gerarRelatorio() {
         document.getElementById("entregador1").textContent = "N/A";
     }
 
-    const taxa = subtotalGeral * 0.15;
-    const totalPagar = subtotalGeral + taxa;
+    const totalPagar = subtotalGeral;
 
     document.getElementById("subtotal_rel").textContent = `R$ ${subtotalGeral.toFixed(2)}`;
-    document.getElementById("taxa_rel").textContent = `R$ ${taxa.toFixed(2)}`;
+
     document.getElementById("preco1").textContent = `R$ ${totalPagar.toFixed(2)}`;
 }
 
