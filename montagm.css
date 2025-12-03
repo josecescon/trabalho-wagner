@@ -267,3 +267,17 @@ body {
     font-size: x-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#negrudoc{
+    width: 100px;
+    margin-left: 875px;
+}
+#brasa{
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+#cerqueirinha {
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
