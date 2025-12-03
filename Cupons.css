@@ -24,11 +24,17 @@ body{
     background-color: rgba(55, 3, 0, 0.8);
 }
 #negrudoc{
- width: 100px;
-
-
+    width: 100px;
+    margin-left: 100px;
 }
-footer{
- text-align: center;
- padding-right: 65%;
+#brasa{
+    width: 100px;
+    position: absolute;
+    right: 0;
 }
+#cerqueirinha {
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
