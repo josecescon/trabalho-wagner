@@ -50,10 +50,11 @@ body{
 @media print {
     .no-print { display: none !important; }
     .meu-elemento { visibility: hidden; }
-    body { visibility: visible; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; margin: 0;}
+    body { visibility: visible; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; width: 100px; padding-left: 100px;}
     .informacoes { visibility: visible; font-size: 17pt;}
-    .logo { visibility: visible; width: 400px; height: auto;}
-    
+    .logo { visibility: visible; width: 325px; height: auto;}
+    #brasa{ visibility: visible; padding-right: 45%;}
+    #negrudoc { visibility: visible;     position: absolute; right: 0;}
 }
 #negrudoc{
     width: 100px;
